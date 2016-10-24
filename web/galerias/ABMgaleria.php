@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['codigo_usuario']))
-header("Location:http://dev.appwebpy.com/disco/login/acceso.html");
+header("Location:http://localhost/diablo/login/acceso.html");
 $catego=  $_SESSION["categoria_usuario"];
 ?>
 <?php 
@@ -24,7 +24,7 @@ $max_file_size = 100000000;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Disco- Galerias</title>
+    <title>Diablo- Galerias</title>
     <!-- Bootstrap Core CSS -->
     <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
@@ -101,7 +101,7 @@ $max_file_size = 100000000;
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                      <h1 class="page-header">Galerias - <small>Disco</small></h1>
+                      <h1 class="page-header">Galerias - <small>Diablo</small></h1>
                 </div>	
             </div>
             <!-- /.row -->

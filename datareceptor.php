@@ -8,7 +8,7 @@
 	$telefono = $_REQUEST['telefono'];
 	$imagen = $_REQUEST['imagen'];
 
- $imagenUrl='http://dev.appwebpy.com/disco/web/class/reservas/'.$imagen.'.jpg';
+ $imagenUrl='http://localhost/diablo/web/class/reservas/'.$imagen.'.jpg';
  $codigoEvento=obtenerCodigo('eventos','eve_cod','eve_nom',$evento);
  
  $query = "INSERT INTO reservas(res_nom,res_obs,eve_cod,res_fecha,res_telefono,res_activo,res_confirm,res_imagen)"

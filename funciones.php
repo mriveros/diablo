@@ -3,7 +3,7 @@
         //conecta al 192.168.56.100
         function conexionlocal()
         {
-             return $dbconn = $conectate=pg_connect("host='localhost' port=5432 dbname='disco' user='postgres' password='2016aws.Postgres.ubuntu'")or die ('Error al conectar a la base de datos menu');
+             return $dbconn = $conectate=pg_connect("host='localhost' port=5432 dbname='Diablo' user='postgres' password='postgres'")or die ('Error al conectar a la base de datos menu');
         } 
         //funcion que selecciona a la base de Datos
        function selectConexion($database){
@@ -14,7 +14,7 @@
         }
         //funcion para comprobar si existe el mismo dato en la tabla
        function func_existeDato($dato, $tabla, $columna){
-            selectConexion('Disco');
+            selectConexion('Diablo');
             $query = "select * from $tabla where $columna = '$dato' ;";
             $result = pg_query($query) or die ("Error al realizar la consulta");
             if (pg_num_rows($result)>0)

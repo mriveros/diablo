@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['codigo_usuario']))
-header("Location:http://dev.appwebpy.com/disco/login/acceso.html");
+header("Location:http://localhost/diablo/login/acceso.html");
 $catego=  $_SESSION["categoria_usuario"];
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ $catego=  $_SESSION["categoria_usuario"];
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DiscoA 2.0- Conceptos</title>
+    <title>DiabloA 2.0- Conceptos</title>
     <!-- Bootstrap Core CSS -->
     <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
