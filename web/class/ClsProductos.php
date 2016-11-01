@@ -82,7 +82,7 @@ $codusuario=  $_SESSION["codigo_usuario"];
             or error('solo esta permitido subir imagenes', $uploadForm); 
 
         $now = time();
-        $nombreimagen='http://localhost/diablo/web/class/productos/'.$now.$_FILES[$fieldname]['name'];
+        $nombreimagen='http://10.0.100.214/diablo/web/class/productos/'.$now.$_FILES[$fieldname]['name'];
         while(file_exists($uploadFilename = $uploadsDirectory.$now.$_FILES[$fieldname]['name'])) 
         { 
             $now++; 
@@ -130,7 +130,7 @@ function modificarProducto($nombre,$descripcion,$precio,$estado,$codigoModif){
             or error('solo esta permitido subir imagenes', $uploadForm); 
 
         $now = time();
-        $nombreimagen='http://localhost/diablo/web/class/productos/'.$now.$_FILES[$fieldname]['name'];
+        $nombreimagen='http://10.0.100.214/diablo/web/class/productos/'.$now.$_FILES[$fieldname]['name'];
         while(file_exists($uploadFilename = $uploadsDirectory.$now.$_FILES[$fieldname]['name'])) 
         { 
             $now++; 

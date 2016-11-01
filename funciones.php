@@ -3,7 +3,7 @@
         //conecta al 192.168.56.100
         function conexionlocal()
         {
-             return $dbconn = $conectate=pg_connect("host='localhost' port=5432 dbname='Diablo' user='postgres' password='postgres'")or die ('Error al conectar a la base de datos menu');
+             return $dbconn = $conectate=pg_connect("host='localhost' port=5432 dbname='diablo' user='postgres' password='postgres'")or die ('Error al conectar a la base de datos menu');
         } 
         //funcion que selecciona a la base de Datos
        function selectConexion($database){

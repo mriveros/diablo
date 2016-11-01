@@ -88,7 +88,7 @@ function agregarEvento($evento,$fecha,$descripcion){
             or error('solo esta permitido subir imagenes', $uploadForm); 
 
         $now = time();
-        $nombreimagen='http://localhost/diablo/web/class/eventos/'.$now.$_FILES[$fieldname]['name'];
+        $nombreimagen='http://10.0.100.214/diablo/web/class/eventos/'.$now.$_FILES[$fieldname]['name'];
         while(file_exists($uploadFilename = $uploadsDirectory.$now.$_FILES[$fieldname]['name'])) 
         { 
             $now++; 
@@ -137,7 +137,7 @@ function modificarEvento($evento,$descripcion,$fecha,$estado,$codigoModif){
             or error('solo esta permitido subir imagenes', $uploadForm); 
 
         $now = time();
-        $nombreimagen='http://localhost/diablo/web/class/eventos/'.$now.$_FILES[$fieldname]['name'];
+        $nombreimagen='http://10.0.100.214/diablo/web/class/eventos/'.$now.$_FILES[$fieldname]['name'];
         while(file_exists($uploadFilename = $uploadsDirectory.$now.$_FILES[$fieldname]['name'])) 
         { 
             $now++; 

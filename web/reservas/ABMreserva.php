@@ -121,7 +121,7 @@ $catego=  $_SESSION["categoria_usuario"];
                                     </thead>
                                     <tbody>
                     <?php
-                    $query = "select * from reservas res, eventos eve where res.eve_cod=eve.eve_cod  and res.res_activo='t';";
+                    $query = "select * from reservas res where res.res_activo='t';";
                     $result = pg_query($query) or die ("Error al realizar la consulta");
                     while($row1 = pg_fetch_array($result))
                     {
