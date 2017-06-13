@@ -112,9 +112,8 @@ $catego=  $_SESSION["categoria_usuario"];
                                             <th style='display:none'>Codigo</th>
                                             <th>Nombre</th>
                                             <th>Observacion</th>
-                                            <th>Evento</th>
                                             <th>Fecha Reserva</th>
-											<th>Telefono</th>
+                                            <th>Telefono</th>
                                             <th>Confirmado</th>
                                             <th>Accion</th>
                                         </tr>
@@ -130,7 +129,6 @@ $catego=  $_SESSION["categoria_usuario"];
                         echo "<tr><td style='display:none'>".$row1["res_cod"]."</td>";
                         echo "<td>".$row1["res_nom"]."</td>";
                         echo "<td>".$row1["res_obs"]."</td>";
-                        echo "<td>".$row1["eve_nom"]."</td>";
                         echo "<td>".$row1["res_fecha"]."</td>";
 						echo "<td>".$row1["res_telefono"]."</td>";
                         echo "<td>".$confirmado."</td>";
